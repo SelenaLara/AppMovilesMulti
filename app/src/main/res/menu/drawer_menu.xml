@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Inicio">
+            </item>
+            <item
+                android:id="@+id/tratamiento"
+                android:icon="@drawable/ic_tratamiento"
+                android:title="Tratamiento">
+            </item>
+            <item
+                android:id="@+id/historial"
+                android:icon="@drawable/ic_historial"
+                android:title="Historial">
+            </item>
+            <item
+                android:id="@+id/recargaMed"
+                android:icon="@drawable/ic_recargamed"
+                android:title="Recarga de medicamentos">
+            </item>
+            <item
+                android:id="@+id/registroPulso"
+                android:icon="@drawable/ic_linelife"
+                android:title="Registro de Pulsos">
+            </item>
+            <item
+                android:title=" ">
+            </item>
+            <item
+                android:title=" ">
+            </item>
+
+        </menu>
+
+</item>
+
+    <item android:title="Secundario">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="Mi perfil">
+            </item>
+            <item
+                android:id="@+id/configuracion"
+                android:icon="@drawable/ic_config"
+                android:title="Configuración">
+            </item>
+            <item
+                android:id="@+id/salir"
+                android:icon="@drawable/ic_salir"
+                android:title="Salir">
+            </item>
+            <item
+                android:id="@+id/politicas"
+                android:title="Políticas de privacidad">
+            </item>
+
+        </menu>
+
+    </item>
+
+</menu>
