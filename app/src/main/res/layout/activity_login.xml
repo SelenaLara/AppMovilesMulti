@@ -19,7 +19,7 @@
   </ImageView>
 
   <TextView
-      android:id="@+id/bienvenidaLogin"
+      android:id="@+id/bienvenidoLabel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="¡Bienvenido a Smart Pillbox!"
@@ -31,14 +31,14 @@
       android:transitionName="textTrans"/>
 
   <TextView
-      android:id="@+id/continuar"
+      android:id="@+id/continuarLabel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:textAlignment="center"
       android:layout_gravity="center"
       android:text="Inicia sesión para continuar"
       android:textSize="20sp"
-      android:transitionName="startSessionTextTrans"/>
+      android:transitionName="iniciaSesionTextTrans"/>
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:hint="Email"
-        android:transitionName="emailInputTextTrans">
+        android:transitionName="emailInputTrans">
        <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
@@ -61,13 +61,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/contrasenaTextField"
+        android:id="@+id/passTextField"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:hint="Contraseña"
-        android:transitionName="passInputTextTrans"
+        android:transitionName="passwTrans"
         app:passwordToggleEnabled="true">
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
@@ -89,7 +89,7 @@
         android:textSize="15sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/botonInicio"
+        android:id="@+id/inicioSesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -99,7 +99,8 @@
         android:transitionName="buttonSignInTrans"/>
 
     <TextView
-        android:id="@+id/nuevoUsuario"
+        android:id="@+id/usuarioNuevo"
+        android:transitionName="newUserTrans"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -110,7 +111,7 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:transitionName="newUserTrans"/>
+        />
 
   </LinearLayout>
 </LinearLayout>

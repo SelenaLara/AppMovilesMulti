@@ -37,6 +37,14 @@ public class SignUpActivity extends AppCompatActivity {
         inicioSesion=findViewById(R.id.inicioSesion);
         usuarioNuevo = findViewById(R.id.usuarioNuevo);
 
+        inicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this, home_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         usuarioNuevo.setOnClickListener(new View.OnClickListener() {
             @Override

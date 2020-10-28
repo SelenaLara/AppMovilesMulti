@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
 
     TextView bienvenidoLabel, continuarLabel, nuevoUsuario;
     ImageView loginImageView;
-    TextInputLayout usuarioTextField,passTextField;
+    TextInputLayout usuarioTextField, passTextField;
     MaterialButton inicioSesion;
 
     @Override
@@ -26,14 +26,22 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        loginImageView = findViewById(R.id.logoImageView);
-        bienvenidoLabel = findViewById(R.id.bienvenidaLogin);
-        continuarLabel = findViewById(R.id.continuar);
+        loginImageView = findViewById(R.id.loginImageView);
+        bienvenidoLabel = findViewById(R.id.bienvenidoLabel);
+        continuarLabel = findViewById(R.id.continuarLabel);
         usuarioTextField = findViewById(R.id.usuarioTextField);
-        passTextField = findViewById(R.id.contrasenaTextField);
-        inicioSesion=findViewById(R.id.botonInicio);
-        nuevoUsuario = findViewById(R.id.nuevoUsuario);
+        passTextField = findViewById(R.id.passTextField);
+        inicioSesion=findViewById(R.id.inicioSesion);
+        nuevoUsuario = findViewById(R.id.usuarioNuevo);
 
+        inicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, home_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         nuevoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,9 +50,9 @@ public class LoginActivity extends AppCompatActivity {
                 Pair[] pairs= new Pair[7];
                 pairs[0] = new Pair<View, String>(loginImageView, "logoImageTrans" );
                 pairs[1] = new Pair<View, String>(bienvenidoLabel, "textTrans" );
-                pairs[2] = new Pair<View, String>(continuarLabel, "startSessionTextTrans" );
-                pairs[3] = new Pair<View, String>(usuarioTextField, "emailInputTextTrans" );
-                pairs[4] = new Pair<View, String>(passTextField, "passInputTextTrans" );
+                pairs[2] = new Pair<View, String>(continuarLabel, "iniciaSesionTextTrans" );
+                pairs[3] = new Pair<View, String>(usuarioTextField, "emailInputTrans" );
+                pairs[4] = new Pair<View, String>(passTextField, "passwTrans" );
                 pairs[5] = new Pair<View, String>(inicioSesion, "buttonSignInTrans" );
                 pairs[6] = new Pair<View, String>(nuevoUsuario, "newUserTrans" );
 
@@ -57,6 +65,5 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
