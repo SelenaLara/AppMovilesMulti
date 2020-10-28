@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_tiposMed">
+        <item>Seleccionar</item>
+        <item>Pastillas</item>
+        <item>Inyecciones</item>
+    </string-array>
+
+</resources>

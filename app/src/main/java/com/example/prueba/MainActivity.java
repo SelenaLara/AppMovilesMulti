@@ -3,21 +3,18 @@ package com.example.prueba;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.net.wifi.WifiManager;
-import android.net.wifi.aware.WifiAwareManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Pair;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.prueba.Fragments.FragmentTratamiento;
+import com.example.prueba.Fragments.MainFragment;
 
 public class MainActivity extends Activity {
 
@@ -41,7 +38,7 @@ public class MainActivity extends Activity {
 
         new Handler().postDelayed(new Runnable() {
             public void run(){
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, home_activity.class);
 
                 Pair[] pairs= new Pair[2];
                 pairs[0] = new Pair<View, String>(logoImageView, "logoImageTrans" );
