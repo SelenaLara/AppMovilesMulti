@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/signUpImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_launch"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="left"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bienvenidoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="¡Bienvenido!"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:transitionName="textTrans"/>
+
+            <TextView
+                android:id="@+id/continuarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístrate para comenzar a usar Smart Pillbox"
+                android:textSize="24sp"
+                android:fontFamily="@font/abel"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:transitionName="iniciaSesionTextTrans"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameTextField"
+                    android:hint="Nombre completo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usuarioSignUpTextField"
+                    android:hint="Email"
+                    android:transitionName="emailInputTrans"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passTextField"
+                    android:hint="Contraseña"
+                    android:transitionName="passwTrans"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passConfTextField"
+                    android:hint="Confirma tu contraseña"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numeroTextField"
+                    android:hint="Número de celular"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"
+                        android:inputType="phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edadPacienteTextField"
+                    android:hint="Edad del paciente"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sexTextField"
+                    android:hint="Sexo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abel"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/inicioSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAR"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:transitionName="buttonSignUpTrans"/>
+
+            <TextView
+                android:id="@+id/usuarioNuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/abel"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:textStyle="bold"
+                android:text="¿Ya tienes una cuenta? Inicia sesión"
+                android:transitionName="newUserTrans"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
