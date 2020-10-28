@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,15 +14,28 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="60dp"
         android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Seleccionar medicamento a modificar"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/spinnerSeleccMed"
+            android:layout_width="263dp"
+            android:layout_height="47dp" />
+
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nombMedicTextField"
+            android:id="@+id/nombMedicModifTextField"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre del medicamento:"
             android:textColorHint="@android:color/darker_gray"
-            android:textSize="22sp"></com.google.android.material.textfield.TextInputEditText>
-
+            android:textSize="22sp">
+        </com.google.android.material.textfield.TextInputEditText>
 
         <TextView
             android:layout_width="match_parent"
@@ -33,10 +45,9 @@
             android:textSize="22sp" />
 
         <Spinner
-            android:id="@+id/spinnerTipoMed"
+            android:id="@+id/spinnerTipoMedModif"
             android:layout_width="263dp"
             android:layout_height="47dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,29 +68,11 @@
             android:layout_marginTop="26dp"
             android:text="Hora de toma:"
             android:textSize="22sp" />
-
         <EditText
             android:id="@+id/editTextTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="time"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="Duración del tratamiento:"
-            android:textSize="22sp" />
-
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
-
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

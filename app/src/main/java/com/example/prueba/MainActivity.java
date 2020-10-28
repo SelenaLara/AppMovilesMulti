@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 
         new Handler().postDelayed(new Runnable() {
             public void run(){
-                Intent intent = new Intent(MainActivity.this, home_activity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
 
                 Pair[] pairs= new Pair[2];
                 pairs[0] = new Pair<View, String>(logoImageView, "logoImageTrans" );

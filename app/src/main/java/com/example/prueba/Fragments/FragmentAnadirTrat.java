@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
@@ -13,10 +14,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.prueba.LoginActivity;
 import com.example.prueba.R;
+import com.google.android.material.button.MaterialButton;
 
 public class FragmentAnadirTrat extends Fragment {
 
     Spinner comboTipoMed;
+    MaterialButton btonGuardar;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -22,11 +22,29 @@ public class FragmentTratamiento extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tratamiento, container, false);
         FloatingActionButton btnAnadirTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton);
+        FloatingActionButton btnModTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton2);
+        FloatingActionButton btnElimTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton3);
         btnAnadirTrat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.container, new FragmentAnadirTrat());
+                fr.commit();
+            }
+        });
+        btnModTrat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.container, new FragmentModTrat());
+                fr.commit();
+            }
+        });
+        btnElimTrat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.container, new FragmentElimTrat());
                 fr.commit();
             }
         });

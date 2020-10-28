@@ -6,4 +6,10 @@
         <item>Inyecciones</item>
     </string-array>
 
+    <string-array name="combo_seleccMed">
+        <item>Seleccionar</item>
+        <item>Medicamento 1</item>
+        <item>Medicamento 2</item>
+    </string-array>
+
 </resources>
