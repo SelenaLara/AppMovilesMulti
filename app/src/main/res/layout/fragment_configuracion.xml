@@ -6,13 +6,109 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Configuración"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="60dp"
+        android:text="CONFIGURACIÓN"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="633dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="16dp"
+            android:text="Bocina PillBox"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:text="Sonido"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Volumen"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_volumen"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-20dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:text="Pantalla PillBox"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Brillo"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_volumen"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="80dp"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

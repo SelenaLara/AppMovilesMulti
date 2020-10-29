@@ -10,7 +10,7 @@
         android:id="@+id/RegisPulLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTRO DE PULSOS"
+        android:text="@string/registro_de_pulsos"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginTop="60dp"
@@ -21,10 +21,23 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="371dp"
-        android:layout_height="152dp"
+        android:layout_height="223dp"
         android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RegisPulLabel"
-        app:srcCompat="@drawable/ImagenTablaPulso"
-        tools:layout_editor_absoluteX="21dp" />
+        app:srcCompat="@drawable/ic_imagen_tabla_pulso"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_imagen_grafica" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
