@@ -12,4 +12,24 @@
         <item>Medicamento 2</item>
     </string-array>
 
+    <string-array name="comboCompartim">
+        <item>Seleccionar</item>
+        <item>Compartimiento 1</item>
+        <item>Compartimiento 2</item>
+        <item>Compartimiento 3</item>
+        <item>Compartimiento 4</item>
+        <item>Compartimiento 5</item>
+        <item>Compartimiento 7</item>
+    </string-array>
+
+    <string-array name="comboMedic">
+        <item>Seleccionar</item>
+        <item>Medicamento 1</item>
+        <item>Medicamento 2</item>
+        <item>Medicamento 3</item>
+        <item>Medicamento 4</item>
+        <item>Medicamento 5</item>
+        <item>Medicamento 7</item>
+    </string-array>
+
 </resources>

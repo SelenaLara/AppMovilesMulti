@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.prueba.Fragments.FragmentRecargaMedic;
 import com.example.prueba.Fragments.FragmentTratamiento;
 import com.example.prueba.Fragments.MainFragment;
 
@@ -52,6 +53,6 @@ public class MainActivity extends Activity {
                     finish();
                 }
             };
-        }, 2000);
+        }, 1000);
     }
 }
