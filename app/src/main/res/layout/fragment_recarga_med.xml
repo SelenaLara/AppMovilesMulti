@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
-                android:text="RECARGA DE MEDICAMENTOS"
+                android:text="@string/recargaLabel"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:layout_height="29dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="28dp"
-                android:text="Seleccionar compartimiento"
+                android:text="@string/textView3"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.457"
@@ -69,7 +69,7 @@
                 android:layout_height="29dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Seleccionar medicamento"
+                android:text="@string/textView7"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.457"
@@ -95,7 +95,7 @@
                 android:layout_height="66dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="Por favor, coloca 1 pastilla en el compartimiento seleccionado"
+                android:text="@string/textView8"
                 android:textAlignment="center"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -106,7 +106,7 @@
                 tools:ignore="MissingConstraints" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/botonListo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Cantidad:"
+                android:text="@string/cantidad"
                 android:textSize="22sp" />
 
             <EditText
@@ -133,8 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                android:text="numero"/>
+                android:inputType="number"/>
 
             <Button
                 android:id="@+id/button2"
@@ -142,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:text="Continuar"
+                android:text="@string/button2"
                 android:background="@color/colorPrimary"
                 android:textColor="#FFF"
                 android:textSize="18sp"

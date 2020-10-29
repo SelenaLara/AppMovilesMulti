@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abel"
-                android:text="¡Bienvenido!"
+                android:text="@string/bienvenidoLabel"
                 android:layout_gravity="center"
                 android:layout_marginTop="28dp"
                 android:textSize="40sp"
@@ -41,7 +41,7 @@
                 android:id="@+id/continuarLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Regístrate para comenzar a usar Smart Pillbox"
+                android:text="@string/continuarLabel"
                 android:textSize="24sp"
                 android:fontFamily="@font/abel"
                 android:textAlignment="center"
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/nameTextField"
-                    android:hint="Nombre completo"
+                    android:hint="@string/nameTextField"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="300dp"
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/usuarioSignUpTextField"
-                    android:hint="Email"
+                    android:hint="@string/usuarioSignUpTextField"
                     android:transitionName="emailInputTrans"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/passTextField"
-                    android:hint="Contraseña"
+                    android:hint="@string/passTextField"
                     android:transitionName="passwTrans"
                     app:passwordToggleEnabled="true"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -97,7 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/passConfTextField"
-                    android:hint="Confirma tu contraseña"
+                    android:hint="@string/passConfTextField"
                     app:passwordToggleEnabled="true"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
@@ -110,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/numeroTextField"
-                    android:hint="Número de celular"
+                    android:hint="@string/numeroTextField"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/edadPacienteTextField"
-                    android:hint="Edad del paciente"
+                    android:hint="@string/edadPacienteTextField"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/sexTextField"
-                    android:hint="Sexo"
+                    android:hint="@string/sexTextField"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                 android:id="@+id/inicioSesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="REGISTRAR"
+                android:text="@string/inicioSesion"
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp"
                 android:transitionName="buttonSignUpTrans"/>
@@ -163,7 +163,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:textStyle="bold"
-                android:text="¿Ya tienes una cuenta? Inicia sesión?"
+                android:text="@string/usuarioNuevo"
                 android:transitionName="newUserTrans"/>
         </LinearLayout>
     </ScrollView>

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:title="Principal">
+<item android:title="@string/principal">
         <menu>
             <item
                 android:id="@+id/home"
                 android:icon="@drawable/ic_home"
-                android:title="Inicio">
+                android:title="@string/inicio2">
             </item>
             <item
                 android:id="@+id/tratamiento"
                 android:icon="@drawable/ic_tratamiento"
-                android:title="Tratamiento">
+                android:title="@string/tratamiento2">
             </item>
             <item
                 android:id="@+id/historial"
                 android:icon="@drawable/ic_historial"
-                android:title="Historial">
+                android:title="@string/historial2">
             </item>
             <item
                 android:id="@+id/recargaMed"
                 android:icon="@drawable/ic_recargamed"
-                android:title="Recarga de medicamentos">
+                android:title="@string/recarga_de_medicamentos">
             </item>
             <item
                 android:id="@+id/registroPulso"
                 android:icon="@drawable/ic_linelife"
-                android:title="Registro de Pulsos">
+                android:title="@string/registro_de_pulsos2">
             </item>
             <item
                 android:title=" ">
@@ -43,21 +43,21 @@
             <item
                 android:id="@+id/perfil"
                 android:icon="@drawable/ic_perfil"
-                android:title="Mi perfil">
+                android:title="@string/mi_perfil">
             </item>
             <item
                 android:id="@+id/configuracion"
                 android:icon="@drawable/ic_config"
-                android:title="Configuración">
+                android:title="@string/configuraci_n2">
             </item>
             <item
                 android:id="@+id/salir"
                 android:icon="@drawable/ic_salir"
-                android:title="Salir">
+                android:title="@string/salir">
             </item>
             <item
                 android:id="@+id/politicas"
-                android:title="Políticas de privacidad">
+                android:title="@string/pol_ticas_de_privacidad">
             </item>
 
         </menu>

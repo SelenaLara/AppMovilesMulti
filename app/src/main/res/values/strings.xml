@@ -51,16 +51,25 @@
     <string name="textView3">Seleccionar compartimiento"</string>
     <string name="textView7">Seleccionar medicamento</string>
     <string name="textView8">Por favor, coloca 1 pastilla en el compartimiento seleccionado</string>
-    <string name="ttextcantidad">Cantidad:</string>
     <string name="editTextNumber">numero</string>
-    <string name="button2">Continuar</string>
-    <string name="ttextcantidad">Cantidad:</string>
-    <string name="ttextcantidad">Cantidad:</string>
-    <string name="ttextcantidad">Cantidad:</string>
+    <string name="button2">Continuar</string>}
     <string name="tratamiento">TRATAMIENTO</string>
     <string name="a_adir_medicamento">Añadir medicamento</string>
     <string name="modificar_medicamento">Modificar medicamento</string>
     <string name="eliminar_medicamento">Eliminar medicamento</string>
+    <string name="principal">Principal</string>
+    <string name="inicio2">Inicio</string>
+    <string name="tratamiento2">Tratamiento</string>
+    <string name="historial2">Historial</string>
+    <string name="recarga_de_medicamentos">Recarga de medicamentos</string>
+    <string name="registro_de_pulsos2">Registro de Pulsos</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="configuraci_n2">Configuración</string>
+    <string name="salir">Salir</string>
+    <string name="pol_ticas_de_privacidad">Políticas de privacidad</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="registrar">Registrate</string>
 
 
 </resources>
