@@ -106,7 +106,7 @@
         android:layout_gravity="center"
         android:clickable="true"
         android:focusable="true"
-        android:text="Regístrate"
+        android:text="@string/registrar"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="20dp"
