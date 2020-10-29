@@ -163,7 +163,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:textStyle="bold"
-                android:text="¿Ya tienes una cuenta? Inicia sesión"
+                android:text="¿Ya tienes una cuenta? Inicia sesión?"
                 android:transitionName="newUserTrans"/>
         </LinearLayout>
     </ScrollView>

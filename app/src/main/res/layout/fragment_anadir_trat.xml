@@ -26,6 +26,7 @@
 
 
         <TextView
+            android:id="@+id/edittext1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
@@ -38,6 +39,7 @@
             android:layout_height="47dp" />
 
         <TextView
+            android:id="@+id/edittext2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
@@ -52,6 +54,7 @@
             android:inputType="number" />
 
         <TextView
+            android:id="@+id/edittext3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
@@ -66,6 +69,7 @@
             android:inputType="time"/>
 
         <TextView
+            android:id="@+id/edittext4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"

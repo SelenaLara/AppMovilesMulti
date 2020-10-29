@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="Seleccionar medicamento a modificar"
+            android:text="@string/seleccionar_medicamento_a_modificar"
             android:textSize="22sp" />
 
         <Spinner
@@ -32,7 +32,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre del medicamento:"
+            android:hint="@string/nombre_del_medicamento"
             android:textColorHint="@android:color/darker_gray"
             android:textSize="22sp">
         </com.google.android.material.textfield.TextInputEditText>
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="Tipo de medicamento"
+            android:text="@string/tipo_de_medicamento"
             android:textSize="22sp" />
 
         <Spinner
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="Cantidad:"
+            android:text="@string/cantidad"
             android:textSize="22sp" />
 
         <EditText
@@ -63,6 +63,7 @@
             android:inputType="number" />
 
         <TextView
+            android:id="@+id/hora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="CONFIGURACIÓN"
+        android:text="@string/configuraci_n"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:layout_marginLeft="16dp"
-            android:text="Bocina PillBox"
+            android:text="@string/bocina_pillbox"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
 
         <Switch
             android:id="@+id/switch1"
@@ -54,16 +55,18 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
-            android:text="Volumen"
+            android:text="@string/volumen"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
 
         <SeekBar
             android:id="@+id/seekBar2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="80dp"/>
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -80,9 +83,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="80dp"
-            android:text="Pantalla PillBox"
+            android:text="@string/pantalla_pillbox"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -90,9 +94,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
-            android:text="Brillo"
+            android:text="@string/brillo"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -101,7 +106,8 @@
             app:srcCompat="@drawable/ic_volumen"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            tools:ignore="VectorDrawableCompat" />
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="TODO" />
 
         <SeekBar
             android:id="@+id/seekBar3"

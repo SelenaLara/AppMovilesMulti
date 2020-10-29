@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="Seleccionar medicamento a eliminar"
+            android:text="@string/seleccionar_medicamento_a_eliminar"
             android:textSize="22sp" />
 
         <Spinner
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
             android:gravity="center"
-            android:text="¿Está seguro que desea eliminar el medicamento?"
+            android:text="@string/est_seguro_que_desea_eliminar_el_medicamento"
             android:textAlignment="center"
             android:textSize="22sp" />
 
@@ -40,13 +40,13 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SI" />
+            android:text="@string/si" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NO" />
+            android:text="@string/no" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
