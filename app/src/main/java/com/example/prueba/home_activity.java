@@ -18,6 +18,7 @@ import android.media.ExifInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -61,6 +62,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
+        //fragmentTransaction.addToBackStack(null);
         fragmentTransaction.add(R.id.container, new MainFragment());
         fragmentTransaction.commit();
 
@@ -73,45 +75,52 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new MainFragment());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.tratamiento){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentTratamiento());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.historial){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentHistorial());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.recargaMed){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentRecargaMedic());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.registroPulso){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentRegistroPulsos());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.perfil){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentMiPerfil());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.configuracion){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentConfiguracion());
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
-        if (menuItem.getItemId() == R.id.salir){
+        if (menuItem.getItemId() == R.id.salir) {
             logout(this);
         }
 
@@ -137,6 +146,29 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
             }
         });
         builder.show();
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu ){
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        if (menuItem.getItemId() == R.id.perfil2){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new FragmentMiPerfil());
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+        if (menuItem.getItemId() == R.id.configuracion2){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new FragmentConfiguracion());
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+        return true;
     }
 
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.prueba.R;
@@ -17,6 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FragmentTratamiento extends Fragment {
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,11 +26,17 @@ public class FragmentTratamiento extends Fragment {
         FloatingActionButton btnAnadirTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton);
         FloatingActionButton btnModTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton2);
         FloatingActionButton btnElimTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton3);
+        FragmentTransaction fr = getFragmentManager().beginTransaction();
+        fr.addToBackStack(null);
+        fr.commit();
+
+
         btnAnadirTrat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.container, new FragmentAnadirTrat());
+                fr.addToBackStack(null);
                 fr.commit();
             }
         });
@@ -37,6 +45,7 @@ public class FragmentTratamiento extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.container, new FragmentModTrat());
+                fr.addToBackStack(null);
                 fr.commit();
             }
         });
@@ -45,6 +54,7 @@ public class FragmentTratamiento extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.container, new FragmentElimTrat());
+                fr.addToBackStack(null);
                 fr.commit();
             }
         });

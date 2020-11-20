@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/perfil2"
+        android:title="@string/mi_perfil"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_perfil" />
+    <item
+        android:id="@+id/configuracion2"
+        android:title="Configuración"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_settings"/>
+</menu>

@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.prueba.R;
 
@@ -25,6 +26,9 @@ public class FragmentRecargaMedic extends Fragment {
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(getActivity(), R.array.comboMedic, android.R.layout.simple_spinner_item);
         comboCompart.setAdapter(adapter);
         comboMed.setAdapter(adapter2);
+        FragmentTransaction fr = getFragmentManager().beginTransaction();
+        fr.addToBackStack(null);
+        fr.commit();
         return view;
     }
 }
