@@ -26,16 +26,14 @@ public class FragmentTratamiento extends Fragment {
         FloatingActionButton btnAnadirTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton);
         FloatingActionButton btnModTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton2);
         FloatingActionButton btnElimTrat = (FloatingActionButton) view.findViewById(R.id.floatingActionButton3);
-        FragmentTransaction fr = getFragmentManager().beginTransaction();
-        fr.addToBackStack(null);
-        fr.commit();
-
+        FloatingActionButton btnRegresar = (FloatingActionButton) view.findViewById(R.id.floatingActionButton4);
 
         btnAnadirTrat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.container, new FragmentAnadirTrat());
+                //fr.replace(R.id.container, new FragmentAnadirTrat());
+                fr.replace(R.id.container, new FragmentAnadirTrat2());
                 fr.addToBackStack(null);
                 fr.commit();
             }
@@ -59,6 +57,17 @@ public class FragmentTratamiento extends Fragment {
             }
         });
 
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.container, new MainFragment());
+                fr.addToBackStack(null);
+                fr.commit();
+            }
+        });
+
         return view;
     }
+
 }
