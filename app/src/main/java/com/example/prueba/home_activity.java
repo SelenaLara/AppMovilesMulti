@@ -106,7 +106,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
-        if (menuItem.getItemId() == R.id.perfil){
+        /*if (menuItem.getItemId() == R.id.perfil){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentMiPerfil());
@@ -119,7 +119,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
             fragmentTransaction.replace(R.id.container, new FragmentConfiguracion());
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
-        }
+        }*/
         if (menuItem.getItemId() == R.id.salir) {
             logout(this);
         }

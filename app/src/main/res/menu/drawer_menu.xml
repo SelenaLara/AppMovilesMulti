@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:title="@string/principal">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<item tools:ignore="MenuTitle">
         <menu>
             <item
                 android:id="@+id/home"
@@ -33,14 +34,20 @@
             <item
                 android:title=" ">
             </item>
+            <item
+                android:title=" ">
+            </item>
+            <item
+                android:title=" ">
+            </item>
 
         </menu>
 
 </item>
 
-    <item android:title="Secundario">
+    <item tools:ignore="MenuTitle">
         <menu>
-            <item
+            <!--<item
                 android:id="@+id/perfil"
                 android:icon="@drawable/ic_perfil"
                 android:title="@string/mi_perfil">
@@ -49,7 +56,7 @@
                 android:id="@+id/configuracion"
                 android:icon="@drawable/ic_config"
                 android:title="@string/configuraci_n2">
-            </item>
+            </item>-->
             <item
                 android:id="@+id/salir"
                 android:icon="@drawable/ic_salir"

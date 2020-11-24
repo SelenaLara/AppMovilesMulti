@@ -51,7 +51,7 @@ public class FragmentTratamiento extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.container, new FragmentElimTrat());
+                fr.replace(R.id.container, new FragmentElimTrat2());
                 fr.addToBackStack(null);
                 fr.commit();
             }
