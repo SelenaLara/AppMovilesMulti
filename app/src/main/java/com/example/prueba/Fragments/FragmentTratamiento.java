@@ -42,7 +42,7 @@ public class FragmentTratamiento extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.container, new FragmentModTrat());
+                fr.replace(R.id.container, new FragmentModTrat2());
                 fr.addToBackStack(null);
                 fr.commit();
             }

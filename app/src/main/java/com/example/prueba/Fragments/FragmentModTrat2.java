@@ -1,7 +1,6 @@
 package com.example.prueba.Fragments;
 
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,35 +17,30 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.prueba.R;
-import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Calendar;
 
-public class FragmentAnadirTrat2 extends Fragment implements View.OnClickListener {
+public class FragmentModTrat2 extends Fragment implements View.OnClickListener {
 
-    Spinner comboTipoMed;
-    MaterialButton btonGuardar;
+    Spinner comboSeleccMed;
     Button btonHora;
     EditText editTextHora;
     private int hora, minutos;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_anadir_trat2, container, false);
-        comboTipoMed=(Spinner)view.findViewById(R.id.spinnerTipoMed);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.combo_tiposMed, android.R.layout.simple_spinner_item);
-        comboTipoMed.setAdapter(adapter);
-        FloatingActionButton btnRegresar;
+        View view = inflater.inflate(R.layout.fragment_mod_trat2, container, false);
 
+        FloatingActionButton buttonRegresar;
+
+        buttonRegresar = (FloatingActionButton) view.findViewById(R.id.floatingActionBRegresarMod);
         btonHora=(Button) view.findViewById(R.id.buttonHora);
         editTextHora=(EditText) view.findViewById(R.id.editTextHora);
-        btnRegresar = (FloatingActionButton) view.findViewById(R.id.floatingActionBRegresar);
 
         btonHora.setOnClickListener(this);
 
-        btnRegresar.setOnClickListener(new View.OnClickListener() {
+        buttonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -59,10 +53,8 @@ public class FragmentAnadirTrat2 extends Fragment implements View.OnClickListene
         FragmentTransaction fr = getFragmentManager().beginTransaction();
         fr.addToBackStack(null);
         fr.commit();
+
         return view;
-
-
-
     }
 
     @Override
