@@ -52,7 +52,7 @@
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton7"
+        android:id="@+id/floatingActionButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
