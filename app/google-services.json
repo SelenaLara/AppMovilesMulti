@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "479346836347",
+    "firebase_url": "https://smart-pillbox-2d168.firebaseio.com",
+    "project_id": "smart-pillbox-2d168",
+    "storage_bucket": "smart-pillbox-2d168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479346836347:android:3639d308c538ebc2e7b3de",
+        "android_client_info": {
+          "package_name": "com.example.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479346836347-gaa00hrsmiljdcrdamtu0m0kg13tcr4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaMLIDMgCJQFpU1TLRAiVDkjsOnYloTBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479346836347-gaa00hrsmiljdcrdamtu0m0kg13tcr4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

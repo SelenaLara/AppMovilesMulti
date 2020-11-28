@@ -9,6 +9,7 @@
     android:background="@color/colorAccent"
     tools:context=".PopUpNotifElim">
 
+
     <ImageView
     android:src="@drawable/ic_check"
         android:layout_gravity="center"

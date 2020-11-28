@@ -18,6 +18,6 @@ public class PopUpNotifElim extends AppCompatActivity {
         int ancho = medidaVentana.widthPixels;
         int alto = medidaVentana.heightPixels;
 
-        getWindow().setLayout((int)(ancho*0.85),(int)(alto*0.5));
+        getWindow().setLayout((int)(ancho*0.85),(int)(alto*0.2));
     }
 }
