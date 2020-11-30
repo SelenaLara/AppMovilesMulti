@@ -34,26 +34,26 @@
         android:layout_height="wrap_content"
         layout="@layout/drawer_toolbar">
     </include>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/drawer_toolbar2">
-    </include>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/drawer_logo">
-    </include>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/drawer_frase">
-    </include>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/drawer_menu_home">
-    </include>
+    <!--    <include-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        layout="@layout/drawer_toolbar2">-->
+    <!--    </include>-->
+    <!--    <include-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        layout="@layout/drawer_logo">-->
+    <!--    </include>-->
+    <!--    <include-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        layout="@layout/drawer_frase">-->
+    <!--    </include>-->
+    <!--    <include-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        layout="@layout/drawer_menu_home">-->
+    <!--    </include>-->
     <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

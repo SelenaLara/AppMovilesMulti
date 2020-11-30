@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
+        android:id="@+id/floatingActionButton_tratamiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
+        android:id="@+id/floatingActionButton_historial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="616dp"
@@ -37,7 +37,7 @@
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton7"
+        android:id="@+id/floatingActionButton_recarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -47,12 +47,12 @@
         android:backgroundTint="@color/colorAccent"
         android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton5"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton_tratamiento"
         app:srcCompat="@drawable/ic_recargamed"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton8"
+        android:id="@+id/floatingActionButton_pulsos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -62,7 +62,7 @@
         android:backgroundTint="@color/colorAccent"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton6"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton_historial"
         app:srcCompat="@drawable/ic_recargamed"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

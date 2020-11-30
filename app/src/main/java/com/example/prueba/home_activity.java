@@ -24,6 +24,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.prueba.Fragments.FragmentConfiguracion;
+import com.example.prueba.Fragments.FragmentConfiguracion2;
 import com.example.prueba.Fragments.FragmentHistorial;
 import com.example.prueba.Fragments.FragmentMiPerfil;
 import com.example.prueba.Fragments.FragmentRecargaMedic;
@@ -164,7 +165,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
         if (menuItem.getItemId() == R.id.configuracion2){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container, new FragmentConfiguracion());
+            fragmentTransaction.replace(R.id.container, new FragmentConfiguracion2());
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
