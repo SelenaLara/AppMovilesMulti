@@ -12,15 +12,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.prueba.LoginActivity;
 import com.example.prueba.PopUpHorariosNotif;
-import com.example.prueba.PopUpNotifElim;
 import com.example.prueba.R;
-import com.example.prueba.SignUpActivity;
 
 public class FragmentConfiguracion2 extends Fragment {
 
-    Button btnCancelarH,btnSelcH;
+    Button btnSelcH;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -14,8 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.prueba.R;
 import com.example.prueba.PopUpNotifElim;
+import com.example.prueba.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FragmentElimTrat2 extends Fragment {

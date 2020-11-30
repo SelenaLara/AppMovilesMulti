@@ -1,15 +1,10 @@
 package com.example.prueba;
 
-import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.View;
 import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
-import com.example.prueba.Fragments.FragmentRecargaMedic;
 
 public class PopUpHorariosNotif extends AppCompatActivity {
 
@@ -24,6 +19,6 @@ public class PopUpHorariosNotif extends AppCompatActivity {
         int ancho = medidaVentana.widthPixels;
         int alto = medidaVentana.heightPixels;
 
-        getWindow().setLayout((int)(ancho*0.85),(int)(alto*0.2));
+        getWindow().setLayout((int)(ancho*0.85),(int)(alto*0.3));
     }
 }
