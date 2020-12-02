@@ -36,5 +36,4 @@
         android:layout_height="wrap_content"
         android:text="Sólo con conexión WiFi" />
 
-
 </LinearLayout>

@@ -12,18 +12,21 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.prueba.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 
-public class MainFragment extends Fragment {
+public class    MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_fragment, container, false);
         FloatingActionButton btnTrat, btnHistorial, btnRecarga, btnPulsos;
 
+
         btnTrat = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_tratamiento);
         btnHistorial = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_historial);
         btnRecarga = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_recarga);
         btnPulsos = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_pulsos);
+
 
         btnTrat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,4 +69,6 @@ public class MainFragment extends Fragment {
         });
         return view;
     }
+
+
 }

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.prueba.PopUpHorariosNotif;
+import com.example.prueba.PopUpNotifElim;
 import com.example.prueba.R;
 
 public class FragmentConfiguracion2 extends Fragment {
@@ -24,7 +25,6 @@ public class FragmentConfiguracion2 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_configuracion2, container, false);
 
         btnSelcH=(Button)view.findViewById(R.id.buttonSeleccH);
-        //btnCancelarH=(Button)view.findViewById(R.id.buttonCncelarHorario);
 
         btnSelcH.setOnClickListener(new View.OnClickListener() {
             @Override
