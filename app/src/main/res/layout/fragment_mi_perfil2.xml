@@ -57,7 +57,7 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Nombre del Paciente"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
@@ -85,7 +85,7 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Numero de celular"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
@@ -111,7 +111,7 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Edad"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
@@ -139,7 +139,7 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Sexo"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
@@ -149,7 +149,6 @@
                 android:layout_width="32dp"
                 android:layout_height="43dp"
                 android:layout_marginHorizontal="1dp"
-
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
                 android:ems="10"
@@ -163,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PERFIL"
-        android:textColor="@color/colorAccent"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/include2"
@@ -181,9 +180,8 @@
 
     <EditText
         android:id="@+id/editnombre"
-        android:layout_width="192dp"
-        android:layout_height="34dp"
-
+        android:layout_width="282dp"
+        android:layout_height="43dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
