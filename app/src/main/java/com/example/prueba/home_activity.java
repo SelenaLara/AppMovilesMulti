@@ -27,6 +27,7 @@ import com.example.prueba.Fragments.FragmentConfiguracion;
 import com.example.prueba.Fragments.FragmentConfiguracion2;
 import com.example.prueba.Fragments.FragmentHistorial;
 import com.example.prueba.Fragments.FragmentMiPerfil;
+import com.example.prueba.Fragments.FragmentMiPerfil2;
 import com.example.prueba.Fragments.FragmentRecargaMedic;
 import com.example.prueba.Fragments.FragmentRegistroPulsos;
 import com.example.prueba.Fragments.FragmentTratamiento;
@@ -145,7 +146,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
         if (menuItem.getItemId() == R.id.perfil2){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container, new FragmentMiPerfil());
+            fragmentTransaction.replace(R.id.container, new FragmentMiPerfil2());
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }

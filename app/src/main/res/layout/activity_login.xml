@@ -37,6 +37,7 @@
       android:textAlignment="center"
       android:layout_gravity="center"
       android:text="@string/inicia_sesi_n_para_continuar"
+
       android:textSize="20sp"
       android:transitionName="iniciaSesionTextTrans"/>
 

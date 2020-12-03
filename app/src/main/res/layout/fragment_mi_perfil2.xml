@@ -7,4 +7,201 @@
     android:layout_height="match_parent">
 
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/drawer_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/drawer_perfildos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        tools:layout_editor_absoluteX="0dp"></include>
+
+    <TextView
+        android:id="@+id/perfilName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de perfil"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="353dp"
+        android:layout_height="153dp"
+        android:background="#f1f1f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/textPaciente"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Nombre del Paciente"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextpaciente"
+                android:layout_width="32dp"
+                android:layout_height="43dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textNcelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Numero de celular"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Edad"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="32dp"
+                android:layout_height="43dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/textsexo"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="Sexo"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextsexo"
+                android:layout_width="32dp"
+                android:layout_height="43dp"
+                android:layout_marginHorizontal="1dp"
+
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERFIL"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:layout_editor_absoluteX="206dp" />
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="192dp"
+        android:layout_height="34dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+</LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
