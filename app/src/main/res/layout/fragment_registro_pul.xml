@@ -30,14 +30,16 @@
         tools:ignore="MissingConstraints"
         android:contentDescription="TODO" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/grafica"
+        android:layout_width="414dp"
+        android:layout_height="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/ic_imagen_grafica" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796"
+        tools:ignore="MissingConstraints"></com.jjoe64.graphview.GraphView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

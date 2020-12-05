@@ -16,7 +16,7 @@
             <item
                 android:id="@+id/historial"
                 android:icon="@drawable/ic_historial"
-                android:title="@string/historial2">
+                android:title="Control de tratamiento">
             </item>
             <item
                 android:id="@+id/recargaMed"

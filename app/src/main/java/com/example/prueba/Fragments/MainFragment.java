@@ -19,10 +19,10 @@ public class    MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_fragment, container, false);
-        FloatingActionButton btnTrat, btnHistorial, btnRecarga, btnPulsos;
+        //FloatingActionButton btnTrat, btnHistorial, btnRecarga, btnPulsos;
 
 
-        btnTrat = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_tratamiento);
+        /*btnTrat = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_tratamiento);
         btnHistorial = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_historial);
         btnRecarga = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_recarga);
         btnPulsos = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_pulsos);
@@ -66,7 +66,7 @@ public class    MainFragment extends Fragment {
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
-        });
+        });*/
         return view;
     }
 

@@ -20,11 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/drawer_frase">
-    </include>
-    <include
+    </include><!--<include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/drawer_menu_home">
-    </include>
+    </include>-->
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
