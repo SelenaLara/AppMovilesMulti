@@ -19,54 +19,7 @@ public class    MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_fragment, container, false);
-        //FloatingActionButton btnTrat, btnHistorial, btnRecarga, btnPulsos;
 
-
-        /*btnTrat = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_tratamiento);
-        btnHistorial = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_historial);
-        btnRecarga = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_recarga);
-        btnPulsos = (FloatingActionButton)view.findViewById(R.id.floatingActionButton_pulsos);
-
-
-        btnTrat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.container, new FragmentTratamiento());
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-
-        btnHistorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.container, new FragmentHistorial());
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-
-        btnRecarga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.container, new FragmentRecargaMedic());
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-
-        btnPulsos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.container, new FragmentRegistroPulsos());
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });*/
         return view;
     }
 

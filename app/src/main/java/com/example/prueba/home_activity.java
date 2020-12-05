@@ -1,7 +1,6 @@
 package com.example.prueba;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,20 +12,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.media.ExifInterface;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import com.example.prueba.Fragments.FragmentConfiguracion;
 import com.example.prueba.Fragments.FragmentConfiguracion2;
 import com.example.prueba.Fragments.FragmentHistorial;
-import com.example.prueba.Fragments.FragmentMiPerfil;
 import com.example.prueba.Fragments.FragmentMiPerfil2;
 import com.example.prueba.Fragments.FragmentRecargaMedic;
 import com.example.prueba.Fragments.FragmentRegistroPulsos;
@@ -38,7 +29,7 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
-    Toolbar toolbar;
+    Toolbar toolbar, toolbar2;
     NavigationView navigationView;
 
     FragmentManager fragmentManager;
@@ -49,6 +40,8 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_activity);
+
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer);
@@ -64,7 +57,6 @@ public class home_activity extends AppCompatActivity implements NavigationView.O
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        //fragmentTransaction.addToBackStack(null);
         fragmentTransaction.add(R.id.container, new MainFragment());
         fragmentTransaction.commit();
 

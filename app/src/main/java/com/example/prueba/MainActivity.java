@@ -19,13 +19,10 @@ import com.example.prueba.Fragments.MainFragment;
 
 public class MainActivity extends Activity {
 
-    //private final int DURACION_SPLASH = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         Animation animacion1 = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba);
@@ -53,6 +50,6 @@ public class MainActivity extends Activity {
                     finish();
                 }
             };
-        }, 1000);
+        }, 2000);
     }
 }
