@@ -16,18 +16,15 @@
         android:layout_gravity="center"
         android:layout_marginTop="60dp"/>
     
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+    <CalendarView
+        android:id="@+id/calenarioView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CalendarView>
 
-        <CalendarView
-            android:layout_width="wrap_content"
-            android:layout_height="320dp"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/bf_calendar"
-            android:filterTouchesWhenObscured="true"
-            android:measureAllChildren="false"
-            android:showWeekNumber="false"></CalendarView>
-    </LinearLayout>
+    <ListView
+        android:id="@+id/listaTratam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 </LinearLayout>

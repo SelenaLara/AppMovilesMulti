@@ -10,8 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PopUpHorariosNotif"
-            android:theme="@style/AppTheme.TemaPopups"/>
+        <activity android:name=".Mostrar_tratamiento"></activity>
+        <activity
+            android:name=".PopUpHorariosNotif"
+            android:theme="@style/AppTheme.TemaPopups" />
         <activity
             android:name=".PopUpNotifElim"
             android:theme="@style/AppTheme.TemaPopups" />
