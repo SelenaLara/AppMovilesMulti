@@ -15,6 +15,9 @@
             android:name=".PopUpHorariosNotif"
             android:theme="@style/AppTheme.TemaPopups" />
         <activity
+            android:name=".PopUpNotifTratamAnanido"
+            android:theme="@style/AppTheme.TemaPopups" />
+        <activity
             android:name=".PopUpNotifElim"
             android:theme="@style/AppTheme.TemaPopups" />
         <activity android:name=".SignUpActivity" />

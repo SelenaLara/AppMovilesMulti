@@ -28,7 +28,7 @@
         android:ems="5"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/editTextHora5"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFechaInicio4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFechaFin"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -120,8 +120,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
-        android:layout_width="84dp"
-        android:layout_height="39dp"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:ems="10"
@@ -177,7 +177,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttonFechaInicio4"
+        android:id="@+id/buttonFechaFin"
         android:layout_width="144dp"
         android:layout_height="52dp"
         android:layout_marginStart="42dp"
