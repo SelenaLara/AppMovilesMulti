@@ -27,7 +27,6 @@ public class SignUpActivity extends AppCompatActivity {
     TextView usuarioNuevo, bienvenidoLabel, continuarLabel;
     ImageView signUpImageView;
     TextInputLayout usuarioSignUpTextField,passTextField;
-    MaterialButton inicioSesion;
 
 
     DatabaseReference databaseReference;
@@ -65,6 +64,9 @@ public class SignUpActivity extends AppCompatActivity {
 
                 //       InicializarFirebase();
                 CargarDatosFire(nombre, Email, contraseña, confirma_contraseña, celular, edad, sexo);
+                Intent intent = new Intent(SignUpActivity.this, home_activity.class);
+                startActivity(intent);
+                finish();
 
             }
 //            private void InicializarFirebase () {
@@ -83,17 +85,8 @@ public class SignUpActivity extends AppCompatActivity {
         continuarLabel = findViewById(R.id.continuarLabel);
         usuarioSignUpTextField = findViewById(R.id.usuarioSignUpTextField);
         passTextField = findViewById(R.id.passTextField);
-        inicioSesion=findViewById(R.id.inicioSesion);
         usuarioNuevo = findViewById(R.id.usuarioNuevo);
 
-        inicioSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignUpActivity.this, home_activity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         usuarioNuevo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,7 +128,7 @@ public class SignUpActivity extends AppCompatActivity {
         pairs[2] = new Pair<View, String>(continuarLabel, "iniciaSesionTextTrans" );
         pairs[3] = new Pair<View, String>(usuarioSignUpTextField, "emailInputTrans" );
         pairs[4] = new Pair<View, String>(passTextField, "passwTrans" );
-        pairs[5] = new Pair<View, String>(inicioSesion, "buttonSignUpTrans" );
+        pairs[5] = new Pair<View, String>(mButtonSubirDatosFirebase, "buttonSignUpTrans" );
         pairs[6] = new Pair<View, String>(usuarioNuevo, "newUserTrans" );
 
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){

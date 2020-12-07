@@ -144,14 +144,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/inicioSesion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/inicioSesion"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:transitionName="buttonSignUpTrans"/>
-            <com.google.android.material.button.MaterialButton
                 android:id="@+id/registro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
