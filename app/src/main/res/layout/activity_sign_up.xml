@@ -28,14 +28,14 @@
             <TextView
                 android:id="@+id/bienvenidoLabel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
-                android:text="@string/bienvenidoLabel"
+                android:layout_height="34dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="28dp"
+                android:fontFamily="@font/abel"
+                android:text="@string/bienvenidoLabel"
                 android:textSize="40sp"
                 android:textStyle="bold"
-                android:transitionName="textTrans"/>
+                android:transitionName="textTrans" />
 
             <TextView
                 android:id="@+id/continuarLabel"
@@ -55,6 +55,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="14dp"
                 android:orientation="vertical">
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -150,7 +151,14 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp"
                 android:transitionName="buttonSignUpTrans"/>
-
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inicioSesion"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:transitionName="buttonSignUpTrans"/>
             <TextView
                 android:id="@+id/usuarioNuevo"
                 android:layout_width="wrap_content"
