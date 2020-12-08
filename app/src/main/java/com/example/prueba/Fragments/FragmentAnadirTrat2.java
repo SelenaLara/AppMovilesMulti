@@ -66,12 +66,12 @@ public class FragmentAnadirTrat2 extends Fragment implements View.OnClickListene
         buttonGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                String nombreDelMedicam = editTextDatoNombreMed.getText().toString();
-                String cantidad = editTextDatoCantidad.getText().toString();
-                String tipoMed = comboTipoMed.getSelectedItem().toString();
-                String hora = editTextHora.getText().toString();
-                String fechaInicio = editTextInicio.getText().toString();
-                String fechaFin = editTextFin.getText().toString();
+                String nombreDelMedicam = editTextDatoNombreMed.getText().toString().trim();
+                String cantidad = editTextDatoCantidad.getText().toString().trim();
+                String tipoMed = comboTipoMed.getSelectedItem().toString().trim();
+                String hora = editTextHora.getText().toString().trim();
+                String fechaInicio = editTextInicio.getText().toString().trim();
+                String fechaFin = editTextFin.getText().toString().trim();
 
 
                 //       InicializarFirebase();

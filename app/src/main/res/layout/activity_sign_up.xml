@@ -151,6 +151,14 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp"
                 android:transitionName="buttonSignUpTrans"/>
+            <!--<com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:transitionName="buttonSignUpTrans"/>-->
             <TextView
                 android:id="@+id/usuarioNuevo"
                 android:layout_width="wrap_content"

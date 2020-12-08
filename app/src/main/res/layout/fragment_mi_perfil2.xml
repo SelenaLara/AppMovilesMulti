@@ -29,7 +29,7 @@
         android:id="@+id/perfilName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre de perfil"
+        android:text="@string/nombre_de_perfil"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/include"
@@ -58,7 +58,7 @@
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:text="Nombre del Paciente"
+                android:text="@string/nombre_del_paciente"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
@@ -86,7 +86,7 @@
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:text="Numero de celular"
+                android:text="@string/numero_de_celular"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:text="Edad"
+                android:text="@string/edad"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
@@ -140,7 +140,7 @@
                 android:layout_marginBottom="1dp"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:text="Sexo"
+                android:text="@string/sexo"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PERFIL"
+        android:text="@string/perfil"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
