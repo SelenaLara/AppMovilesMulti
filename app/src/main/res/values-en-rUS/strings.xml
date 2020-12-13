@@ -116,6 +116,7 @@
     <string name="fin">End</string>
     <string name="hora_de_toma">Take time</string>
     <string name="control">Treatment control</string>
+<!--    <string></string>-->
 
 
 </resources>
